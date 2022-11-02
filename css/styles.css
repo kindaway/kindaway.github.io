@@ -6,6 +6,7 @@ html {
 }
 
  body {
+    background-color: #F5F7FA;
     margin: 0 0 0 0; 
     overflow-x: hidden;
 } 
@@ -93,7 +94,7 @@ html {
     color: black;
     font-weight: bold;
 
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -111,6 +112,7 @@ html {
 }
 
 .actual_description {
+    padding: 30px 30px;
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -128,20 +130,20 @@ html {
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
     width: 900px;
 }
 
 .arrow_wrapper {
     display: block;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .arrow {
     margin: 40px auto 10px auto;
-    width: 40px;
-    height: 100px;
+    width: 10px;
+    height: auto;
 }
 .arrow span {
     display: block;
@@ -173,6 +175,12 @@ html {
     }
 }
 
+.pastel_box {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
 .pros {
     display: block;
     margin-top: 100px;
@@ -193,31 +201,93 @@ html {
     text-align: center;
 }
 
+.pros_objects {
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;  
+}
+
 .pros_objects span {
     /* position: relative; */
     overflow: hidden;
-    width: 100%;
-    margin-top: 50px;
-    margin-left: -8px;
-    margin-right: -8px;
+    width: 600px;
+    height:500px;
+
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 60px;
+
 }
 
-.pros_objects span:nth-child(1n) {
+.pros_objects span:nth-child(odd) {
     display: block;
-    width: 90%;
-    height: 250px;
-    background-color:#4e4e4e;
-    border-radius: 0 250px 250px 0;
-    margin-bottom: -50px;
+    background-color: wheat;
+    margin-left: 7%;
 }
 
-.pros_objects span:nth-child(2n) {
+.pros_objects span:nth-child(even) {
+    display: block;
+    background-color: lightblue;
+    margin-right: 7%;
+    margin-left: auto;
+
+    margin-top: -50px;
+} 
+
+.obj_contents_textH {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.mini_container {
+    
+}
+
+.obj_contents_text {
+    
+}
+
+.obj_video {
+    mask-image: url('../masks/mask-circle2.png');
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.bg_picture {
+
     position: relative;
-    display: block;
-    width: 90%;
-    margin-left: 10%;
-    height: 250px;
-    background-color:#000000;
-    border-radius: 250px 0 0 250px;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 5%;
+    z-index: -1;
+    animation: jump 3s infinite;
 }
 
+.bg_picture2 {
+
+    position: relative;
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 5%;
+    z-index: -1;
+    animation: jump 3s infinite;
+    animation-delay: 0;
+}
+
+@keyframes jump {
+    0%{
+        translate: 0 20px;
+    }
+    50%{
+        translate: 0 -20px;
+    }
+    100%{
+        translate: 0 20px;
+    }
+}
