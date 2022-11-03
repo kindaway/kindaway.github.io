@@ -14,19 +14,10 @@ html {
 .header {
     padding: 1.2rem 1.2rem;
     position: relative;
+    background-color: #F5F7FA;
+    width: 100%;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin: 0;
-    margin-left: 10px;
-    display: flex;
-    /* justify-content: space-between; */
-    /* margin-right: 10px; */
-}
 
 .header_inner {
     display: flex;
@@ -83,6 +74,44 @@ html {
 .nav_link:hover {
     border-bottom: 4px solid black;
     padding: 0 0 4px;
+}
+
+
+.bg_picture {
+
+    position: relative;
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 5%;
+    z-index: -1;
+    animation: jump 3s infinite;
+}
+
+.bg_picture2 {
+
+    position: relative;
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 5%;
+    z-index: -1;
+    animation: jump 3s infinite;
+    animation-delay: 0;
+}
+
+@keyframes jump {
+    0%{
+        translate: 0 20px;
+    }
+    50%{
+        translate: 0 -20px;
+    }
+    100%{
+        translate: 0 20px;
+    }
 }
 
 .description {
@@ -190,7 +219,7 @@ html {
     /* justify-content: space-between; */
 }
 
-.pros_text {
+.cool_text {
     margin-right: auto;
     margin-left: auto;
     width: 1000px;
@@ -211,7 +240,7 @@ html {
     /* position: relative; */
     overflow: hidden;
     width: 600px;
-    height:500px;
+    /* height:500px; */
 
     border-radius: 30px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -222,72 +251,60 @@ html {
 .pros_objects span:nth-child(odd) {
     display: block;
     background-color: wheat;
-    margin-left: 7%;
+    margin-left: 15%;
 }
 
 .pros_objects span:nth-child(even) {
     display: block;
-    background-color: lightblue;
-    margin-right: 7%;
+    background-color: #add8e6;
+    margin-right: 15%;
     margin-left: auto;
-
-    margin-top: -50px;
 } 
 
 .obj_contents_textH {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .mini_container {
-    
+    display: flex;
+    margin-top: 40px;
+    height: auto;
 }
 
 .obj_contents_text {
-    
+    line-height: 25px;
+    text-align: start;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .obj_video {
-    mask-image: url('../masks/mask-circle2.png');
-    mask-position: center;
-    mask-repeat: no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    height: 270px;
+    width: auto;
 }
 
-.bg_picture {
-
-    position: relative;
-    float: left;
-    width: 200px;
-    height: auto;
-    margin-top: 3%;
-    margin-left: 5%;
-    z-index: -1;
-    animation: jump 3s infinite;
+.distros {
+    margin-top: 150px;
 }
 
-.bg_picture2 {
+.distros_whatsThat {
+    margin-top: 100px;
 
-    position: relative;
-    float: right;
-    width: 150px;
-    height: auto;
-    margin-top: 3%;
-    margin-right: 5%;
-    z-index: -1;
-    animation: jump 3s infinite;
-    animation-delay: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
 }
 
-@keyframes jump {
-    0%{
-        translate: 0 20px;
-    }
-    50%{
-        translate: 0 -20px;
-    }
-    100%{
-        translate: 0 20px;
-    }
+.distros_container {
+    margin-top: 150px;
 }
