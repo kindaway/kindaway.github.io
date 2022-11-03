@@ -2,9 +2,9 @@
 
 window.onload = () => {
 
-    window.onhashchange = e => {
-        history.replaceState(null,"", e.oldURL);
-    };
+    // window.onhashchange = e => {
+    //     history.replaceState(null,"", e.oldURL);
+    // };
     
     var sunElement = document.getElementById('sun');
     console.log(`The sun is ${sunElement}`);
