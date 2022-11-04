@@ -381,7 +381,7 @@ html {
 .sun_tux {
 
     position: absolute;
-    width: 100px;
+    width: 80px;
     height: auto;
 
     margin-left: auto;
@@ -397,44 +397,89 @@ html {
 .satellite {
     width: 100px;
     height: auto;
-
     position: absolute;
-    z-index: -1;
-
+    /* z-index: -1; */
     margin-left: 0px;
     margin-top: 0px;
 
-    /* transform-origin: 30px 30px; */
+    animation: appearing 3s forwards, spinning 15s linear 1s infinite forwards;
 
-    animation: spinning 5s infinite linear;
+    opacity: 0;
+    /* visibility: hidden; */
+}
 
+.satellite_animated {
+    animation: appearing 3s 1;
+}
+
+.satellites img:nth-child(1) {
+    animation-delay: 0s;
+}
+.satellites img:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.satellites img:nth-child(3) {
+    animation-delay: 3s;
+}
+.satellites img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.satellites img:nth-child(5) {
+    animation-delay: 6s;
+}
+.satellites img:nth-child(6) {
+    animation-delay: 7.5s;
+}
+.satellites img:nth-child(7) {
+    animation-delay: 9s;
+}
+.satellites img:nth-child(8) {
+    animation-delay: 10.5s;
+}
+.satellites img:nth-child(9) {
+    animation-delay: 12s;
+}
+.satellites img:nth-child(10) {
+    animation-delay: 13.5s;
 }
 
 @keyframes spinning {
     0% {
-        transform: rotate(0deg) 
-              translateY(150px) rotate(0deg);
+        transform: rotate(0deg) translateY(200px) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg) 
-              translateY(150px) rotate(-360deg);
+        transform: rotate(360deg) translateY(200px) rotate(-360deg);
     }
 }
 
-/* @keyframes move_to_orbit {
-    0% {
-        transform: translateX(0px);
-        width: 30px;
-        height: auto;
+@keyframes appearing {
+    from {
+        opacity: 0;
     }
-    50% {
-        width: 80px;
-        height: auto;
+
+    to {
+        opacity: 1;
     }
-    100% {
-        width: 80px;
-        height: auto;
-        transform: translateX(200px);
-    }
-} */
+}
+
+.distro_info {
+    width: 50%;
+    height: auto;
+
+    text-align: center;
+
+    margin-top: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.ds_h {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
