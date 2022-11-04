@@ -8,6 +8,9 @@ window.onload = () => {
 
     console.log(satellitesElements);
 
+    let active = -1,
+        previous;
+
     for (let i = 0; i < satellitesElements.length; i++) {
         //current = satellitesElements[i];
         satellitesElements[i].addEventListener('click', () => {
@@ -19,6 +22,12 @@ window.onload = () => {
         
         console.log("CLICKED");
         console.log(id);
+
+        if (satellitesElements[previous] != undefined) {
+            satellitesElements[previous].style="";
+        }
+        previous = id;
+        satellitesElements[id].style.width="120px";
 
         switch(id) {
             case 0:
