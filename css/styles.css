@@ -463,13 +463,18 @@ html {
     }
 }
 
+.info_container {
+    height: 300px;
+}
+
 .distro_info {
-    width: 50%;
+    width: 30%;
     height: auto;
 
     text-align: center;
 
     margin-top: 100px;
+    margin-bottom: 100px;
 
     margin-left: auto;
     margin-right: auto;
@@ -479,7 +484,69 @@ html {
     font-weight: 600;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .ds_h {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+}
+
+.screenshots {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.gallery {
+    margin-top: 150px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 400px 400px 400px;
+    gap: auto;
+    row-gap: 40px;
+    /* justify-content: space-evenly; */
+}
+
+.scr {
+    display: block;
+    border: 5px solid black;
+    width: 400px;
+    height: 230px;
+}
+
+.interesting {
+    margin-top: 150px;
+}
+
+.fax {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+}
+
+code {
+    background-color: black;
+    color: white;
+    padding: 2px 2px;
+}
+
+.fax_link {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.torwalds {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: auto;
+    border-radius: 5%;
 }
