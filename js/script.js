@@ -2,19 +2,22 @@
 
 window.onload = () => {
 
-    // window.onhashchange = e => {
-    //     history.replaceState(null,"", e.oldURL);
-    // };
-    
+    // setTimeout(() => { //Make page visible after it loads 
+    //     document.getElementById('page').style.visibility = "visible";
+    // }, 2000);
+
+
     var sunElement = document.getElementById('sun');
     console.log(`The sun is ${sunElement}`);
+
+    
     
     let options = {
         threshold: 1.0
     };
       
     let observer = new IntersectionObserver(() => {
-        //alert("TUX HAS APPEARED");
+        // alert("TUX HAS APPEARED");
         observer.unobserve(sunElement);
         toggleAnimation();
     }, options);
@@ -23,8 +26,6 @@ window.onload = () => {
     
     var satellitesElements = document.getElementsByClassName('satellite');
     console.log(satellitesElements);
-
-    // let isAnimated = false;
 
     function toggleAnimation() {
 

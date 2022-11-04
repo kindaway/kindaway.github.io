@@ -32,8 +32,8 @@ html {
 }
 
 .logo_image {
-    width: 100px;
-    height: auto;
+    height: 100px;
+    width: auto;
 
     /* -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
     /* mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
@@ -82,8 +82,8 @@ html {
 .bg_picture {
 
     position: absolute;
-    width: 200px;
-    height: auto;
+    height: 200px;
+    width: auto;
 
     margin-top: 3%;
     left: 200px;
@@ -94,8 +94,8 @@ html {
 .bg_picture2 {
 
     position: absolute;
-    width: 150px;
-    height: auto;
+    height: 200px;
+    width: auto;
     margin-top: 3%;
     right: 200px;
 
@@ -106,18 +106,19 @@ html {
 
 @keyframes jump {
     0%{
-        translate: 0 20px;
+        transform: translateY(20px);
     }
     50%{
-        translate: 0 -20px;
+        transform: translateY(-20px);
     }
     100%{
-        translate: 0 20px;
+        transform: translateY(20px);
     }
 }
 
 .description {
     align-items: center;
+    height: auto;
 }
 
 .cool_question {
@@ -296,7 +297,8 @@ html {
 .pros_objects {
     margin-top: 200px;
     margin-left: 0;
-    margin-right: 0;  
+    margin-right: 0; 
+    margin-bottom: 100px; 
 }
 
 .pros_objects span {

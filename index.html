@@ -17,12 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <script src="../js/script.js"></script>
-    <link rel="preload" as="image" href="./img/mint.png">
-    <link rel="preload" as="image" href="./img/popos.png">
-    <link rel="preload" as="image" href="./img/ubuntu.png">
-    <link rel="preload" as="image" href="./img/sabayon.png">
+    <link rel="prefetch" href="./img/mint.png">
+    <link rel="prefetch" href="./img/popos.png">
+    <link rel="prefetch" href="./img/ubuntu.png">
+    <link rel="prefetch" href="./img/sabayon.png">
+    <link rel="prefetch" href="./video/hacker.mp4">
+    <link rel="prefetch" href="./video/manager2.mp4">
+    <link rel="prefetch" href="./video/jarvis.mp4">
+    <link rel="prefetch" href="./video/sonic2.mp4">
  </head>
- <body>
+ <body id="page">
     <header class="header">
       <div class="header_inner">
         <div class="logo">
@@ -41,11 +45,13 @@
         </div>
       </div> 
     </header>
+    <img class="bg_picture" src="./img/ubuntu.png" data-src="">
+    <img class="bg_picture" src="./img/popos.png" data-src="" style="margin-top: 500px;">
+    <img class="bg_picture2" src="./img/mint.png" data-src="" style="margin-top: 500px;">
+    <img class="bg_picture2" src="./img/sabayon.png" data-src="">
+
     <div class="description" id="descript">
-      <img class="bg_picture" src="./img/ubuntu.png" >
-      <img class="bg_picture" src="./img/popos.png" style="margin-top: 500px;">
-      <img class="bg_picture2" src="./img/mint.png" style="margin-top: 500px;">
-      <img class="bg_picture2" src="./img/sabayon.png">
+
       <h1 class="cool_question">Что такое Linux?</h1>
 
       <div class="cool_description">
@@ -65,13 +71,13 @@
       <div class="actual_description pastel_box"><B>Linux</B> — семейство операционных систем на базе <u>ядра Linux</u>. Каждая версия включает в себя тот или иной набор предустановленных программ и другие компоненты. Как и ядро (основа) Linux, системы на его основе создаются и распространяются <u>бесплатно</u>, т.е. по принципу свободного и открытого программного обеспечения (также известного как СПО, <a class="hyperlink" href="https://ru.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">shareware</a> или <i>шаровары</i>). Распространение идет в виде готовой для установки и удобной в обращении операционной системы (далее ОС). </div>
       <!-- <div class="windows_bad">Операционная система Windows — самая популярная ОС в 2022 году. Это неудивительно: появившись в 1985 году, т.н. «Окна» предложили пользователям революционный в те времена способ взаимодействия с системой, теми самими окнами. <br><br> Но заслуженно ли то, что <b>Windows</b> затмила собой все остальные варианты? <br><br><br> Я считаю, нет.</div> -->
     </div>
-    <a href="#pros" class="arrow_wrapper">    
+    <!-- <a href="#pros" class="arrow_wrapper">    
       <div class="arrow">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </a>
+    </a> -->
     <div class="pros">
       <h1 class="cool_text" id="pros">Преимущества Linux:</h1>
       <div class="pros_objects">
@@ -133,7 +139,7 @@
         </div>
         <dir style="margin-top: 1000px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius facere sint neque officia eum nemo, pariatur ullam totam corrupti impedit aliquam cupiditate repellat? Saepe natus facilis cumque voluptatibus, corrupti unde!</dir>
     </div>
-      <script src="./js/arrows.1.0.0.js"></script>
+      <!-- <script src="./js/arrows.1.0.0.js"></script> -->
       <script src="./js/script.js"></script>
  </body>
 </html>
