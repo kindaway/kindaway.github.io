@@ -27,21 +27,21 @@
     <link rel="prefetch" href="./video/sonic2.mp4">
  </head>
  <body id="page">
-    <header class="header">
+    <header id="header" class="header">
       <div class="header_inner">
         <div class="logo">
-          <img class="logo_image" src="./img/pngwing.com.png"></img>
+          <img id="logo_img" class="logo_image" src="./img/pngwing.com.png"></img>
           <div class="logo_text">
-            <div class="logo_text1">Linux</div>
-            <div class="logo_text2">Rulez</div>
+            <div id="t1" class="logo_text1">Linux</div>
+            <div id="t2" class="logo_text2">Rulez</div>
           </div>
         </div>
         <div class="nav">
           <a class="nav_link" href="#descript">Описание</a>
           <a class="nav_link" href="#pros">Плюсы</a>
           <a class="nav_link" href="#distributives">Дистрибутивы</a>
-          <a class="nav_link" href="#">Скриншоты</a>
-          <a class="nav_link" href="#">Интересное</a>
+          <a class="nav_link" href="#screens">Скриншоты</a>
+          <a class="nav_link" href="#interesting">Интересное</a>
         </div>
       </div> 
     </header>
@@ -49,7 +49,7 @@
     <img class="bg_picture" src="./img/popos.png" data-src="" style="margin-top: 500px;">
     <img class="bg_picture2" src="./img/mint.png" data-src="" style="margin-top: 500px;">
     <img class="bg_picture2" src="./img/sabayon.png" data-src="">
-
+    
     <div class="description" id="descript">
 
       <h1 class="cool_question">Что такое Linux?</h1>
@@ -77,8 +77,10 @@
         <span></span>
       </div>
     </a> -->
+
+    <div id="pros" class="placeholder"></div>
     <div class="pros">
-      <h1 class="cool_text" id="pros">Преимущества Linux:</h1>
+      <h1 class="cool_text" >Преимущества Linux:</h1>
       <div class="pros_objects">
           <span>
             <div id="about_package_manager" class="obj_contents">
@@ -125,7 +127,9 @@
         </div>
       </div>
     </div>
-    <div id="distributives" class="distros">
+    <div id="distributives" class="placeholder"></div>
+
+    <div class="distros">
         <div class="cool_text">Дистрибутивы</div>
         <p class="distros_whatsThat"> это готовые для установки наборы, состоящие из операционной системы, программ и прочих компонентов.<br>Существует огромное колиество дистрибутивов, направленных на разных пользователей и их задачи.</p>
         <div class="distros_container">
@@ -150,18 +154,22 @@
           <div id="distro_info" class="pastel_box distro_info" style="margin-top: 650px;">нажмите на иконку дистрибутива</div>
         </div>
     </div>
-    <div id="screens" class="screenshots">
+
+    <div id="screens" class="placeholder"></div>
+    <div class="screenshots">
       <h1 class="cool_text">Скриншоты Linux</h1>
       <div class="gallery">
         <a href="./scr/screen1.png" target="_blank"><img class="scr" src="./scr/screen1.png" alt=""></a>
-        <a href="./scr/screen2.png" target="_blank"><img class="scr" src="./scr/screen2.jpg" alt=""></a>
-        <a href="./scr/screen3.png" target="_blank"><img class="scr" src="./scr/screen3.jpg" alt=""></a>
-        <a href="./scr/screen4.png" target="_blank"><img class="scr" src="./scr/screen4.jpg" alt=""></a>
+        <a href="./scr/screen2.jpg" target="_blank"><img class="scr" src="./scr/screen2.jpg" alt=""></a>
+        <a href="./scr/screen3.jpg" target="_blank"><img class="scr" src="./scr/screen3.jpg" alt=""></a>
+        <a href="./scr/screen4.jpg" target="_blank"><img class="scr" src="./scr/screen4.jpg" alt=""></a>
         <a href="./scr/screen5.png" target="_blank"><img class="scr" src="./scr/screen5.png" alt=""></a>
         <a href="./scr/screen6.png" target="_blank"><img class="scr" src="./scr/screen6.png" alt=""></a>
       </div>
     </div>
-    <div id="interesting" class="interesting">
+
+    <div id="interesting" class="placeholder"></div>
+    <div class="interesting">
       <div class="cool_text">Интересные факты</div>
       <div class="fax">
         <ul>
@@ -176,6 +184,9 @@
           <li>Линус Торвальдс рассказал, что примерно в 2000 году Стив Джобс предложил ему место в Apple для работы над ядром на базе Unix и настаивал на том, чтобы Линус прекратил работу над Linux. Линус Торвальдс, отказался: идеи, присущие Джобсу и его компании, пришлись американцу не по душе</li>
         </ul>
       </div>
+    </div>
+    <div class="footer">
+
     </div>
       <!-- <script src="./js/arrows.1.0.0.js"></script> -->
       <script src="./js/script.js"></script>

@@ -63,3 +63,19 @@ window.onload = () => {
         }
     }
 };
+
+window.onscroll = () => {
+    console.log("scroll");
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("header").style.padding = "5px 10px";
+      document.getElementById("t1").style.fontSize = "15px";
+      document.getElementById("t2").style.fontSize = "15px";
+      document.getElementById("logo_img").style.height="40px";
+
+    } else {
+      document.getElementById("header").style.padding = "10px 10px";
+      document.getElementById("t1").style.fontSize = "20px";
+      document.getElementById("t2").style.fontSize = "20px";
+      document.getElementById("logo_img").style.height="50px";
+    }
+};

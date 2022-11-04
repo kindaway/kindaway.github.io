@@ -14,10 +14,16 @@ html {
 } 
 
 .header {
-    padding: 1.2rem 1.2rem;
-    position: relative;
-    background-color: #F5F7FA;
+    z-index: 1000;
+    overflow: hidden;
+    padding: 10px 1.2rem;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    background-color: #E5EFFF;
+    border-radius: 50px 50px 50px 50px;
     width: 100%;
+    display: relative;
 }
 
 
@@ -32,26 +38,30 @@ html {
 }
 
 .logo_image {
-    height: 100px;
+    height: 50px;
     width: auto;
+    transition: 0.4s;
+    /* margin-top: 10px; */
 
     /* -webkit-mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
     /* mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
 }
 
 .logo_text {
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .logo_text1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
+    transition: 0.4s;
 }
 
 .logo_text2 {
     font-weight: 400;
     font-size: 15px;
     color: darkgray;
+    transition: 0.4s;
 }
 
 .nav {
@@ -59,14 +69,14 @@ html {
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-    margin-top: -90px;
+    /* margin-top: -90px; */
 }
 
 .nav_link {
     position: relative;
     margin-left: 0.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: bold;
     color: black;
     text-transform: uppercase;
@@ -85,7 +95,7 @@ html {
     height: 200px;
     width: auto;
 
-    margin-top: 3%;
+    margin-top: 8%;
     left: 200px;
     z-index: -1;
     animation: jump 3s infinite;
@@ -96,7 +106,7 @@ html {
     position: absolute;
     height: 200px;
     width: auto;
-    margin-top: 3%;
+    margin-top: 8%;
     right: 200px;
 
     z-index: -1;
@@ -126,7 +136,7 @@ html {
     color: black;
     font-weight: bold;
 
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -276,7 +286,7 @@ html {
 
 .pros {
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
     overflow: hidden;
     /* margin-right: 0px; */
 
@@ -359,7 +369,7 @@ html {
 }
 
 .distros {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .distros_whatsThat {
@@ -494,7 +504,7 @@ ul {
 }
 
 .screenshots {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -519,7 +529,7 @@ ul {
 }
 
 .interesting {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .fax {
@@ -549,4 +559,17 @@ code {
     margin-left: 25%;
     margin-right: auto;
     border-radius: 5%;
+}
+
+.footer {
+    margin-top: 150px;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+
+.placeholder {
+    height: 1px;
+    margin-top: 20%;
+    /* background-color: red; */
 }
