@@ -371,7 +371,7 @@ html {
 }
 
 .distros_container {
-    margin-top: 150px;
+    margin-top: 300px;
 
     margin-left: auto;
     margin-right: auto;
@@ -395,21 +395,34 @@ html {
 }
 
 .satellite {
-    width: 20px;
+    width: 100px;
     height: auto;
 
     position: absolute;
     z-index: -1;
 
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    /* transform-origin: 30px 30px; */
+
+    animation: spinning 5s infinite linear;
+
 }
 
-.satellite_animated {
-    animation: move_to_orbit 2s 1;
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg) 
+              translateY(150px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(150px) rotate(-360deg);
+    }
 }
 
-@keyframes move_to_orbit {
+/* @keyframes move_to_orbit {
     0% {
         transform: translateX(0px);
         width: 30px;
@@ -420,6 +433,8 @@ html {
         height: auto;
     }
     100% {
+        width: 80px;
+        height: auto;
         transform: translateX(200px);
     }
-}
+} */

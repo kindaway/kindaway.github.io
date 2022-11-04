@@ -1,59 +1,63 @@
-"using strict";
+// "using strict";
 
-window.onload = () => {
+// window.onload = () => {
+//     var sunElement = document.getElementById('sun');
+//     var satellitesElements = document.getElementsByClassName('satellite');
 
-    // setTimeout(() => { //Make page visible after it loads 
-    //     document.getElementById('page').style.visibility = "visible";
-    // }, 2000);
+//     function step() {
+//         requestAnimationFrame(step);
 
+//             // x = x0 + R cos (t*a)
+//             // y = y0 + R sin (t*a)
+//         //animation step
+//         let x=0, y=0, x0=0, y0=0, x1=0, y1=0;
+//         let radius=0, angle=0, time=0;
+//         let previous;
 
-    var sunElement = document.getElementById('sun');
-    console.log(`The sun is ${sunElement}`);
+//         x = sunElement.offsetLeft;
+//         y = sunElement.offsetTop;
+
+//         x0 = satellitesElements[0].offsetLeft;
+//         y0 = satellitesElements[0].offsetTop;
+
+//         previous = parseInt(satellitesElements[0].style.left);
+
+//         satellitesElements[0].style.left = previous + 30 + 'px';
+
+//     }
+
+//     step(); //animation start;
+
+//     // let observerFiresCount = 0;
+//     // console.log(`Init value: ${observerFiresCount}`);
+
+//     // let observer = new IntersectionObserver(() => {
+//     //     console.log(`Third value: ${observerFiresCount}`);
+//     //     if (observerFiresCount > 1) {
+//     //         console.log('TUX appeared');
+//     //         toggleAnimation();
+//     //     }
+//     //     observerFiresCount++;
+//     // }, {threshold: 1.0});
+
+//     // observer.observe(sunElement);
+//     // observerFiresCount++; 
+//     // console.log(`After mount value: ${observerFiresCount}`);
+
 
     
-    
-    let options = {
-        threshold: 1.0
-    };
-      
-    let observer = new IntersectionObserver(() => {
-        // alert("TUX HAS APPEARED");
-        observer.unobserve(sunElement);
-        toggleAnimation();
-    }, options);
+//     // function toggleAnimation() {
 
-    observer.observe(sunElement);
-    
-    var satellitesElements = document.getElementsByClassName('satellite');
-    console.log(satellitesElements);
+//     //     observer.unobserve(sunElement);
 
-    function toggleAnimation() {
+//     //     for (var i = 0; i < satellitesElements.length; i++) {
+//     //         satellitesElements[i].classList.add("satellite_animated");     
+//     //     }
 
-        console.log("toggled");
-        // observer.unobserve();
+//     //     console.log("Finished rolling");
+//     // }
 
-
-        for (var i = 0; i < satellitesElements.length; i++) {
-            console.log(`Started cycle ${i}`);
-            console.log(satellitesElements[i]);
-        
-            if (!satellitesElements[i].classList.contains('satellite_animated')) {
-                console.log("Added");
-                satellitesElements[i].classList.add("satellite_animated");
-            }
-            else {
-                console.log("Removed");
-                satellitesElements[i].classList.remove("satellite_animated");
-            }
-        }
-        
-    }
-
-    // sunElement.addEventListener('click', () => {
-    //     toggleAnimation();
-    // });
-
-      
-
-};
+//     // x = x0 + R cos (t*a)
+//     // y = y0 + R sin (t*a)
+// };
 
