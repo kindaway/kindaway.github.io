@@ -71,11 +71,22 @@ window.onscroll = () => {
       document.getElementById("t1").style.fontSize = "15px";
       document.getElementById("t2").style.fontSize = "15px";
       document.getElementById("logo_img").style.height="40px";
+      document.getElementById('header').style.borderRadius = "50px 50px 50px 50px";
+    //   document.getElementById('header').style.marginTop = "10px";
 
     } else {
       document.getElementById("header").style.padding = "10px 10px";
       document.getElementById("t1").style.fontSize = "20px";
       document.getElementById("t2").style.fontSize = "20px";
       document.getElementById("logo_img").style.height="50px";
+      document.getElementById('header').style.borderRadius = "0px 0px 0px 0px";
+    }
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("tothetop").style = "bottom: 50px";
+    }
+
+    else {
+        document.getElementById("tothetop").style = "bottom: -90px";
     }
 };

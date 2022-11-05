@@ -21,7 +21,7 @@ html {
     top: 0;
     transition: 0.5s;
     background-color: #E5EFFF;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 0 0 0 0;
     width: 100%;
     display: relative;
 }
@@ -136,7 +136,7 @@ html {
     color: black;
     font-weight: bold;
 
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -149,7 +149,7 @@ html {
 
 .linux_is {
 
-    width: 700px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 
@@ -163,7 +163,9 @@ html {
     overflow: hidden;
     margin-top: -80px;
     height: 150px;
-
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list_cool_things {
@@ -171,7 +173,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
-    width: 1000px;
+    width: 80%;
     text-align: center;
     list-style: none;
 
@@ -181,7 +183,9 @@ html {
 .cool {
 
     line-height: 1.5;
-
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
@@ -285,6 +289,9 @@ html {
 }
 
 .pros {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     margin-top: 50px;
     overflow: hidden;
@@ -296,11 +303,11 @@ html {
 .cool_text {
     margin-right: auto;
     margin-left: auto;
-    width: 1000px;
+    width: 70%;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 64px;
     text-align: center;
 }
 
@@ -370,6 +377,7 @@ html {
 
 .distros {
     margin-top: 100px;
+    height: 1100px;
 }
 
 .distros_whatsThat {
@@ -386,6 +394,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 100px;
+    /* height: 10px; */
 }
 
 .sun_tux {
@@ -474,11 +483,11 @@ html {
 }
 
 .info_container {
-    height: 300px;
+    height: 200px;
 }
 
 .distro_info {
-    width: 30%;
+    width: 50%;
     height: auto;
 
     text-align: center;
@@ -536,7 +545,7 @@ ul {
     margin-left: 10%;
     margin-right: 10%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     display: flex;
 }
@@ -563,13 +572,65 @@ code {
 
 .footer {
     margin-top: 150px;
-    background-color: black;
+    background-color: #E5EFFF;
     width: 100%;
     height: 70px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .placeholder {
     height: 1px;
-    margin-top: 20%;
+    margin-top: 5%;
     /* background-color: red; */
+}
+
+.credits {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 600;
+    padding: 30px 30px;
+    color:#9ab7e6;
+}
+
+.icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.cred {
+    width: 50px;
+    height: 50px;
+}
+
+.to_the_top {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    transition: 1s;
+    position: fixed;
+    left: 30px;
+    bottom: -90px;
+    background-color:white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    text-decoration: none;
+    color: gray;
+}
+
+.facts > li{
+    list-style: none;
+}
+
+.arch {
+    width: 20px;
+    height: 20px;
+    display: inline;
 }
