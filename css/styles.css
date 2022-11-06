@@ -555,7 +555,16 @@ html {
 }
 
 .enlarge {
-    scale: 1.1;
+      -webkit-transform: scale(1.1);  /* Saf3.1+, Chrome */
+
+     -moz-transform: scale(1.1);  /* FF3.5+ */
+
+      -ms-transform: scale(1.1);  /* IE9 */
+
+       -o-transform: scale(1.1);  /* Opera 10.5+ */
+
+          transform: scale(1.1);
+
 }
 
 
