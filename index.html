@@ -37,18 +37,18 @@
           </div>
         </div>
         <div class="nav">
-          <a class="nav_link" href="#top">Описание</a>
-          <a class="nav_link" href="#pros">Плюсы</a>
-          <a class="nav_link" href="#distributives">Дистрибутивы</a>
-          <a class="nav_link" href="#screens">Скриншоты</a>
-          <a class="nav_link" href="#interesting">Интересное</a>
+          <a class="nav_link" href="#top">&ensp;Описание&ensp;</a>
+          <a class="nav_link" href="#pros">&ensp;Плюсы&ensp;</a>
+          <a class="nav_link" href="#distributives">&ensp;Дистрибутивы&ensp;</a>
+          <a style="display: none;" class="nav_link" href="#screens">&ensp;Скриншоты&ensp;</a>
+          <a class="nav_link" href="#interesting">&ensp;Интересное&ensp;</a>
         </div>
       </div> 
     </header>
     <img class="bg_picture" src="./img/ubuntu.png" data-src="">
     <img class="bg_picture" src="./img/popos.png" data-src="" style="margin-top: 500px;">
     <img class="bg_picture2" src="./img/mint.png" data-src="" style="margin-top: 500px;">
-    <img class="bg_picture2" src="./img/sabayon.png" data-src="">
+    <img class="bg_picture2" src="./img/sabayon_simplified.png" data-src="">
     
     <div class="description" id="descript">
 
@@ -62,7 +62,7 @@
             <li class="cool">свобода.</li>
             <li class="cool">безопасность.</li>
             <li class="cool">открытость.</li>
-            <li class="cool">кастомизация.</li>
+            <li class="cool">удобство.</li>
             <li class="cool">круто.</li>
           </ul>
         </div>
@@ -108,8 +108,7 @@
               <div class="mini_container">
                 <div class="obj_contents_text">С Linux вы сможете настроить ЛЮБУЮ деталь своего ПК:
                   <ul>
-                    <li>каждую кнопку</li><br>
-                    <li>каждую иконку</li><br>
+                    <li>каждую кнопку и иконку</li>
                     <li>поведение компьютера в любой ситуации</li>
                   </ul>
                 </div>
@@ -124,7 +123,7 @@
 
     <div class="distros">
         <div class="cool_text">Дистрибутивы</div>
-        <p class="distros_whatsThat"> это готовые для установки наборы, состоящие из операционной системы, программ и прочих компонентов.<br>Существует огромное колиество дистрибутивов, направленных на разных пользователей и их задачи.</p>
+        <p class="distros_whatsThat"> это готовые для установки наборы, состоящие из операционной системы, программ и прочих компонентов.<br><br>Существует огромное колиество дистрибутивов, направленных на разных пользователей и их задачи.</p>
         <div class="distros_container">
             <div class="satellites_container">
               <img id="sun" class="sun_tux" src="./img/tux.png"> 
@@ -142,21 +141,21 @@
               </div>
             </div>
          </div>
-        <div class="info_container">
-          <div id="distro_info" class="pastel_box distro_info" style="margin-top: 650px;">нажмите на иконку дистрибутива</div>
-        </div>
+         <div id="distro_info" class="pastel_box distro_info" style="margin-top: 650px;">нажмите на иконку дистрибутива</div>
+        <!-- <div class="info_container">
+        </div> -->
      </div>
 
     <div id="screens" class="placeholder"></div>
     <div class="screenshots">
       <h1 class="cool_text">Скриншоты Linux</h1>
       <div class="gallery">
-        <a href="./scr/screen1.png" target="_blank"><img class="scr" src="./scr/screen1.png" alt=""></a>
-        <a href="./scr/screen2.jpg" target="_blank"><img class="scr" src="./scr/screen2.jpg" alt=""></a>
-        <a href="./scr/screen3.jpg" target="_blank"><img class="scr" src="./scr/screen3.jpg" alt=""></a>
-        <a href="./scr/screen4.jpg" target="_blank"><img class="scr" src="./scr/screen4.jpg" alt=""></a>
-        <a href="./scr/screen5.png" target="_blank"><img class="scr" src="./scr/screen5.png" alt=""></a>
-        <a href="./scr/screen6.png" target="_blank"><img class="scr" src="./scr/screen6.png" alt=""></a>
+        <a class="scr_cont" href="./scr/screen1.png" target="_blank"><img class="scr" src="./scr/screen1.png" alt=""></a>
+        <a class="scr_cont" href="./scr/screen2.jpg" target="_blank"><img class="scr" src="./scr/screen2.jpg" alt=""></a>
+        <a class="scr_cont" href="./scr/screen3.jpg" target="_blank"><img class="scr" src="./scr/screen3.jpg" alt=""></a>
+        <a class="scr_cont" href="./scr/screen7.png" target="_blank"><img class="scr" src="./scr/screen7.png" alt=""></a>
+        <a class="scr_cont" href="./scr/screen5.png" target="_blank"><img class="scr" src="./scr/screen5.png" alt=""></a>
+        <a class="scr_cont" href="./scr/screen6.png" target="_blank"><img class="scr" src="./scr/screen6.png" alt=""></a>
       </div>
     </div>
 
@@ -167,7 +166,7 @@
         <ul class="facts">
           <li><img class="arch" src="./icons/arch.png" alt=""> В любой Linux системе раньше можно было удалить всю ОС одной командой: <code>rm -rf /</code> где rm значит «удалить», -rf значит «каждую папку и файл, вложенные в данную, игнорируя предупреждения», а / — «корень», то есть самое начало файловой системы. К счастью, эту функцию стало сложнее использовать, так как разработчики внесли предохраняющий механизм</li><br><br>
           <li><img class="arch" src="./icons/arch.png" alt=""> На самом деле, правильное название данной операционной системы — <strong>GNU/Linux</strong>. Дело в том, что сам Linux является лишь ядром, т.е. набором программ, осуществляющих доступ к компонентам ПК и файловой системе.<br>GNU же является именно операционной системой, т.е. набором программ, осуществляющих прямую работу с файлами, звуком, видео и так далее. Именно вместе эти компоненты составляют настоящую, полноценную ОС<br>Тем не менее, прижилось лишь название из одного слова.</li><br><br>
-          <li><img class="arch" src="./icons/arch.png" alt=""> Автор Linux — американец финского происхождения по имени Линус Торвальдс. Также он является автором системы контроля версий <code>git</code>, без которой сейчас не обходится ни одна IT-компания <br><br><br><img class="torwalds" src="./img/linus.jpeg"></li><br><br>
+          <li><img class="arch" src="./icons/arch.png" alt=""> Автор Linux — американец финского происхождения по имени Линус Торвальдс. Также он является автором системы контроля версий <code>git</code>, без которой сейчас не обходится ни одна IT-компания <br><br><br><img class="torwalds" style="margin-top: 5%; margin-bottom: 5%;" src="./img/linus.jpeg"></li><br><br>
           <li><img class="arch" src="./icons/arch.png" alt=""> По логике английского языка, название Linux должно произноситься как «Лайнукс», но часть юзеров говорила так, а часть произносила его как «Линукс». Чтобы разрешить непрекращающиеся споры на эту тему, Линус записал <a class="fax_link" href="./video/videoplayback.mp4" target="_blank">аудиофайл</a> с правильной версией</li><br><br>
           <li><img class="arch" src="./icons/arch.png" alt=""> Ядра Linux целиком написаны на языке программирования «С»</><br><br>
           <li><img class="arch" src="./icons/arch.png" alt=""> Linux повсеместно используется для работы в космической сфере</li><br><br>
@@ -178,7 +177,7 @@
       </div>
     </div>
     <div class="footer">
-      <div class="credits">© LinuxRulez! made by kindaway</div>
+      <div class="credits">©Linux Rulez! made by kindaway</div>
       <div class="icons">
         <a href="https://t.me/kindaway" target="_blank"><img class="cred" src="./icons/tg.png" alt=""></a>
         <a href="https://vk.ru/kindaway" target="_blank"><img class="cred" src="./icons/vk.png" alt=""></a>
