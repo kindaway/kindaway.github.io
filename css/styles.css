@@ -47,10 +47,6 @@ html {
     /* mask-image: radial-gradient(ellipse 90% 80% at 48% 78%, black 40%, transparent 50%); */
 }
 
-.logo_text {
-    /* margin-top: 10px; */
-}
-
 .logo_text1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
