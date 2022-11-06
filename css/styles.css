@@ -5,6 +5,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
     color: #48B9C7;
+    -webkit-transition: 0.4s;
 }
 
  body {
@@ -100,10 +101,13 @@ html {
     }
 
     .nav_link {
-        
+        text-transform: none;
         font-size: 2px;
+        display: none;
     }
 }
+
+
 
 .nav_link:hover {
     color: black;
@@ -117,7 +121,7 @@ html {
     height: 200px;
     width: auto;
 
-    margin-top: 8%;
+    margin-top: -3%;
     left: 5%;
     z-index: -1;
     animation: jump 3s infinite;
@@ -128,7 +132,7 @@ html {
     position: absolute;
     height: 200px;
     width: auto;
-    margin-top: 8%;
+    margin-top: -3%;
     right: 5%;
 
     z-index: -1;
@@ -540,7 +544,7 @@ html {
     text-align: center;
 
     margin-top: 100px;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
 
     margin-left: auto;
     margin-right: auto;
@@ -548,6 +552,10 @@ html {
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.enlarge {
+    scale: 1.1;
 }
 
 
@@ -560,8 +568,53 @@ ul {
     font-family: 'Montserrat', sans-serif;
 }
 
-.screenshots {
+.video_container {
+    position: relative;
+    padding-bottom: 36.5%;
+    height: 0;
+    margin-bottom: 64px;
+    box-sizing: border-box;
+}
+
+.proton {
     margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.cyan {
+    color: #48B9C7;
+}
+
+.video_container {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: auto;
+    background: url("/img/desktop.webp") center center/contain no-repeat;
+}
+
+.gameplay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 5% 10%;
+    /* padding-top: 35%; */
+    /* padding-bottom: 50%; */
+    width: 100%;
+    height: auto;
+}
+
+
+.screenshots {
+    /* margin-top: 100px; */
     width: 100%;
 }
 
@@ -624,7 +677,7 @@ code {
 }
 
 .footer {
-    margin-top: 150px;
+    /* margin-top: 10%; */
     /* background-color: #E5EFFF; */
     width: 100%;
     height: 70px;
