@@ -24,11 +24,11 @@ window.onload = () => {
 
         if (satellitesElements[previous] != undefined) {
             satellitesElements[previous].style.scale="";
+            satellitesElements[previous].classList.remove('enlarge');
             satellitesElements[previous].classList.remove('sat_color');
         }
         previous = id;
-        satellitesElements[id].style.scale="1.1";
-        satellitesElements[id].style.filter = "grayscale(1)";
+        satellitesElements[previous].classList.add('enlarge');
         satellitesElements[previous].classList.add('sat_color');
 
 
