@@ -4,14 +4,20 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
+    color: #48B9C7;
 }
 
  body {
-    background-color: #F5F7FA;
-    margin: 0 0 0 0; 
-    overflow-x: hidden;
+     background-color: black;
+     margin: 0 0 0 0; 
+     overflow-x: hidden;
+    } 
+    
+.header, .footer {
+    background-color: #2B2A33;
+}
 
-} 
+
 
 .header {
     z-index: 1000;
@@ -20,7 +26,7 @@ html {
     position: fixed;
     top: 0;
     transition: 0.5s;
-    background-color: #E5EFFF;
+    /* background-color: #E5EFFF; */
     border-radius: 0 0 0 0;
     width: 100%;
     display: relative;
@@ -56,32 +62,37 @@ html {
 .logo_text2 {
     font-weight: 400;
     font-size: 15px;
-    color: darkgray;
+    /* color: darkgray; */
     transition: 0.4s;
 }
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    height: 100%;
+    height: 50%;
+    width: auto;
     /* margin-top: -90px; */
 }
 
 .nav_link {
     position: relative;
     margin-left: 0.5rem;
+    /* margin-right: 0.5rem; */
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    color: black;
+    transition: 0.4s;
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 3%;
+    border-radius: 20px;
 }
 
 .nav_link:hover {
-    border-bottom: 4px solid black;
-    padding: 0 0 4px;
+    color: black;
+    background-color: cyan;
 }
 
 
@@ -152,13 +163,14 @@ html {
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 60px;
+    margin-bottom: 0px;
 }
 
 .cool_container {
     overflow: hidden;
-    margin-top: -80px;
-    height: 150px;
+    margin-top: 0;
+    height: 80px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -168,6 +180,7 @@ html {
     transform: translateY(0px);;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -30px;
     padding-left: 0;
     width: 80%;
     text-align: center;
@@ -178,14 +191,14 @@ html {
 
 .cool {
 
-    line-height: 1.5;
+    line-height: 120px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 @keyframes swap {
@@ -194,23 +207,23 @@ html {
     }
 
     16.66%, 29.32% {
-        transform: translate3d(0,-150px,0);
+        transform: translate3d(0,-120px,0);
     }
 
     33.32%, 45.98% {
-        transform: translate3d(0,-300px,0);
+        transform: translate3d(0,-240px,0);
     }
 
     49.98%, 62.64% {
-        transform: translate3d(0,-450px,0);
+        transform: translate3d(0,-360px,0);
     }
 
     66.64%, 79.3% {
-        transform: translate3d(0,-600px,0);
+        transform: translate3d(0,-480px,0);
     }
 
     83.3%, 95.96% {
-        transform: translate3d(0,-750px,0);
+        transform: translate3d(0,-600px,0);
     }
 }
 
@@ -225,7 +238,7 @@ html {
 
 .hyperlink {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     font-weight: bold;
 }
 
@@ -279,9 +292,9 @@ html {
 }
 
 .pastel_box {
-    background-color: white;
+    background-color: #2B2A33;
     border-radius: 30px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+    /* box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.5) */
 }
 
 .pros {
@@ -328,13 +341,13 @@ html {
 
 .pros_objects span:nth-child(odd) {
     display: block;
-    background-color: wheat;
+    background-color: rgb(0, 0, 0);
     margin-left: 15%;
 }
 
 .pros_objects span:nth-child(even) {
     display: block;
-    background-color: #add8e6;
+    background-color: #000000;
     margin-right: 15%;
     margin-left: auto;
 } 
@@ -348,27 +361,35 @@ html {
 }
 
 .mini_container {
-    display: flex;
+    /* display: flex; */
     margin-top: 40px;
     height: auto;
+    justify-content: space-between;
 }
 
 .obj_contents_text {
     line-height: 25px;
-    text-align: start;
+    text-align: center;
+
+    /* text-align: left; */
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 
     -webkit-background-clip: text;
     background-clip: text;
+    color: #8f8f8f;
 }
 
 .obj_video {
     border-radius: 50%;
-    display: inline-block;
-    height: 270px;
-    width: auto;
+    display: block;
+    /* float: left; */
+    height: 250px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .distros {
@@ -378,10 +399,12 @@ html {
 
 .distros_whatsThat {
     margin-top: 100px;
-
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .distros_container {
@@ -410,8 +433,9 @@ html {
 }
 
 .satellite {
+    transition: 0.4s;
     width: 100px;
-    height: auto;
+    height: 100px;
     position: absolute;
     /* z-index: -1; */
     margin-left: 0px;
@@ -420,7 +444,18 @@ html {
     animation: appearing 3s forwards, spinning 15s linear 1s infinite forwards;
 
     opacity: 0;
+
+    filter: grayscale(1);
     /* visibility: hidden; */
+}
+
+.sat_color {
+    filter: grayscale(0) !important;
+}
+
+.manjaro {
+    border-radius: 50%;
+    scale: 0.95;
 }
 
 .satellite_animated {
@@ -485,6 +520,7 @@ html {
 .distro_info {
     width: 50%;
     height: auto;
+    /* transition:  */
 
     text-align: center;
 
@@ -498,6 +534,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
 
 ul {
     padding-left: 0;
@@ -528,7 +565,7 @@ ul {
 
 .scr {
     display: block;
-    border: 5px solid black;
+    border: 2px solid rgb(255, 255, 255);
     width: 400px;
     height: 230px;
 }
@@ -568,7 +605,7 @@ code {
 
 .footer {
     margin-top: 150px;
-    background-color: #E5EFFF;
+    /* background-color: #E5EFFF; */
     width: 100%;
     height: 70px;
 
@@ -611,14 +648,14 @@ code {
     position: fixed;
     left: 30px;
     bottom: -90px;
-    background-color:white;
+    background-color: #2B2A33;
     border: 2px solid rgba(0, 0, 0, 0.1);
 
     text-align: center;
     font-size: 30px;
     user-select: none;
     text-decoration: none;
-    color: gray;
+    color: #48B9C7;
 }
 
 .facts > li{
