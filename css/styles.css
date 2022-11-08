@@ -6,6 +6,7 @@ html {
     box-sizing: inherit;
     color: #48B9C7;
     -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
  body {
@@ -94,7 +95,7 @@ html {
     border-radius: 20px;
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 860px) {
 
     .nav {
         flex-wrap: wrap;
@@ -173,12 +174,15 @@ html {
 
 .cool_description {
     margin-top: 100px;
-    width: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #181524;
+    border-radius: 20px;
 }
 
 .linux_is {
 
-    width: 60%;
+    /* width: 60%; */
     margin-left: auto;
     margin-right: auto;
 
@@ -194,7 +198,7 @@ html {
     overflow: hidden;
     margin-top: 0;
     height: 80px;
-    width: 90%;
+    /* width: 90%; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -205,7 +209,7 @@ html {
     margin-right: auto;
     margin-top: -30px;
     padding-left: 0;
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
     list-style: none;
 
@@ -215,7 +219,7 @@ html {
 .cool {
 
     line-height: 120px;
-    width: 90%;
+    /* width: 90%; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -555,6 +559,8 @@ html {
 }
 
 .enlarge {
+    /* -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1); */
     scale: 1.1;
 }
 
