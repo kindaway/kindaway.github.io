@@ -104,4 +104,5 @@ window.onscroll = () => {
 
 function disablePreloader() {
     document.getElementById("preload_overlay").remove();
+    document.getElementById("page").style = 'overflow-y: visible;';
 }
