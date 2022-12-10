@@ -743,3 +743,6 @@ code {
     height: 20px;
     display: inline;
 }
+li {
+    list-style-position:inside;
+}
