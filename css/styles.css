@@ -12,7 +12,7 @@ html {
     /* #181524 */
     background-color: #181524;
     margin: 0 0 0 0; 
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     overflow-y: hidden;
     } 
     
