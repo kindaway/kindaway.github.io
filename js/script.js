@@ -1,6 +1,9 @@
 "using strict";
 
 window.onload = () => {
+
+    disablePreloader();
+
     var satellitesElements = document.getElementsByClassName('satellite');
 
     var current = document.getElementById('distro_info');
@@ -98,3 +101,7 @@ window.onscroll = () => {
         document.getElementById("tothetop").style = "bottom: -90px";
     }
 };
+
+function disablePreloader() {
+    document.getElementById("preload_overlay").remove();
+}
