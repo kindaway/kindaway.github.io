@@ -748,7 +748,7 @@ li {
     list-style-position:inside;
 }
 #preload_overlay {
-    background-color: red;
+    background-color: #1e1b2e;
     position: fixed;
     top: 0;
     left: 0;
@@ -759,10 +759,14 @@ li {
 }
 
 #preloader {
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
     width: 30%;
     height: auto;
-    margin-left: auto;
+    margin-left: 35%;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 10%;
     margin-bottom: auto;
 }

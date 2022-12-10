@@ -1,1 +1,12 @@
-<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><style>.spinner_aj0A{transform-origin:center;animation:spinner_KYSC .75s infinite linear}@keyframes spinner_KYSC{100%{transform:rotate(360deg)}}</style><path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z" class="spinner_aj0A"/></svg>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+ <style>.spinner_aj0A{transform-origin:center;animation:spinner_KYSC .75s infinite linear}@keyframes spinner_KYSC{100%{transform:rotate(360deg)}}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#48b9c7" id="svg_1" class="spinner_aj0A" d="m12,4a8,8 0 0 1 7.89,6.7a1.53,1.53 0 0 0 1.49,1.3l0,0a1.5,1.5 0 0 0 1.48,-1.75a11,11 0 0 0 -21.72,0a1.5,1.5 0 0 0 1.48,1.75l0,0a1.53,1.53 0 0 0 1.49,-1.3a8,8 0 0 1 7.89,-6.7z"/>
+ </g>
+</svg>
